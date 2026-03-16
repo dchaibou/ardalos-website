@@ -29,14 +29,12 @@ const Header = () => {
                         height={50}
                         className="object-contain"
                     />
-                    <div className="hidden sm:block">
-                        <span className="font-title text-xl font-bold text-ardalos-dark block leading-none">
-                            Association des
-                        </span>
-                        <span className="text-[10px] tracking-widest text-ardalos-green font-bold">
-                            Ardalos
-                        </span>
-                    </div>
+                    <span className="font-title text-xl font-bold text-ardalos-dark block leading-none">
+                        Association des
+                    </span>
+                    <span className="text-[10px] tracking-widest text-ardalos-green font-bold">
+                        Ardalos
+                    </span>
                 </Link>
 
                 {/* Navigation Desktop */}
