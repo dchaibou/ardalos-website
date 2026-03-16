@@ -29,8 +29,7 @@ const Footer = () => {
                         <h4 className="font-title text-lg font-bold mb-6 uppercase tracking-wider">Navigation</h4>
                         <ul className="space-y-4 text-gray-400 text-sm">
                             <li><Link href="/" className="hover:text-ardalos-green transition-colors">Accueil</Link></li>
-                            <li><Link href="/a-propos" className="hover:text-ardalos-green transition-colors">Qui sommes-nous ?</Link></li>
-                            <li><Link href="/actions" className="hover:text-ardalos-green transition-colors">Nos Actions</Link></li>
+                            <li><Link href="/actualits" className="hover:text-ardalos-green transition-colors">Actualités</Link></li>
                             <li><Link href="/contact" className="hover:text-ardalos-green transition-colors">Contact</Link></li>
                         </ul>
                     </div>
