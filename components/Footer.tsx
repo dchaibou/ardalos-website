@@ -20,7 +20,7 @@ const Footer = () => {
                             />
                         </div>
                         <p className="text-gray-400 text-sm leading-relaxed">
-                            Association Ardalos : Engagée pour le développement socio-éducatif et la solidarité au Niger.
+                            Association des Ardalos : Engagée pour le développement socio-éducatif et la solidarité au Niger.
                         </p>
                     </div>
 
@@ -95,7 +95,7 @@ const Footer = () => {
                 </div>
 
                 <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center gap-4 text-xs text-gray-500">
-                    <p>© {currentYear} Association Ardalos. Tous droits réservés.</p>
+                    <p>© {currentYear} Association des Ardalos. Tous droits réservés.</p>
                     <p>
                         Propulsé par <Link href="https://taramtech.com" className="hover:text-ardalos-green transition-colors">Taram Tech</Link>
                     </p>

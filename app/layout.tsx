@@ -17,8 +17,8 @@ const openSans = Open_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Ardalos | Arda Yesso",
-  description: "L’association Arda Yesso se focalise actuellement sur la sensibilisation des jeunes nigériens dans trois domaines : "
+  title: "Arda Yesso | Association des Ardalos",
+  description: "L’association Ardalos se focalise actuellement sur la sensibilisation des jeunes nigériens dans trois domaines : "
   + "la santé, l’environnement et l’éducation. - travaillons ensemble pour bâtir le Niger qu’on aimerait voir.",
 };
 

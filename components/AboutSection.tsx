@@ -27,7 +27,7 @@ const AboutSection = () => {
                     </h2>
                     <div className="space-y-4 text-ardalos-gray text-lg">
                         <p>
-                            L&apos;Association <strong>Ardalos</strong> est née d&apos;une volonté commune de transformer les défis en opportunités. Notre slogan, <span className="italic">&quot;Le changement par l&apos;action&quot;</span>, n&apos;est pas qu&apos;une devise, c&apos;est notre moteur quotidien.
+                            L&apos;Association des <strong>Ardalos</strong> est née d&apos;une volonté commune de transformer les défis en opportunités. Notre slogan, <span className="italic">&quot;Le changement par l&apos;action&quot;</span>, n&apos;est pas qu&apos;une devise, c&apos;est notre moteur quotidien.
                         </p>
                         <p>
                             Basés à Niamey, nous intervenons sur l&apos;ensemble du territoire pour porter secours, éduquer et inspirer. Nous croyons que chaque individu possède un potentiel qui ne demande qu&apos;à être révélé par l&apos;éducation et la solidarité.

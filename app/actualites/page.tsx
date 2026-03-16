@@ -7,17 +7,15 @@ export default function NewsPage() {
         <main className="min-h-screen bg-ardalos-light pb-20 pt-12">
             <div className="container mx-auto px-4">
 
-                {/* Header de la page */}
                 <div className="text-center mb-16">
                     <h1 className="font-title text-4xl md:text-5xl font-black text-ardalos-dark uppercase mb-4">
-                        Actualités <span className="text-ardalos-green">Ardalos</span>
+                        Actualités <span className="text-ardalos-green">Association des Ardalos</span>
                     </h1>
                     <p className="text-ardalos-gray max-w-2xl mx-auto">
                         Suivez l&apos;impact de nos actions sur le terrain et restez informé des prochains événements de l&apos;association.
                     </p>
                 </div>
 
-                {/* Grille d&apos;articles */}
                 <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
                     {ARDALOS_NEWS.map((article) => (
                         <Link
@@ -25,7 +23,6 @@ export default function NewsPage() {
                             key={article.id}
                             className="group bg-white rounded-3xl overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col"
                         >
-                            {/* Image avec Overlay de catégorie */}
                             <div className="relative h-60 w-full overflow-hidden">
                                 <Image
                                     src={article.image}
@@ -38,7 +35,6 @@ export default function NewsPage() {
                                 </div>
                             </div>
 
-                            {/* Contenu de la carte */}
                             <div className="p-8 flex flex-col grow">
                                 <span className="text-ardalos-green font-bold text-xs mb-3 flex items-center gap-2">
                                     <span className="w-2 h-2 bg-ardalos-green rounded-full animate-pulse"></span>

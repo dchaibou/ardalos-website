@@ -85,7 +85,7 @@ export default function DonationPage() {
                             <blockquote className="italic text-xl text-ardalos-dark leading-relaxed">
                                 &quot;Travaillons ensemble pour bâtir le Niger qu’on aimerait voir.&quot;
                             </blockquote>
-                            <p className="mt-4 font-bold text-ardalos-green">— L’équipe Arda Yesso</p>
+                            <p className="mt-4 font-bold text-ardalos-green">— L&apos;association des Ardalos</p>
                         </div>
                     </div>
                 </div>

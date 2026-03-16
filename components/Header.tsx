@@ -30,11 +30,11 @@ const Header = () => {
                         className="object-contain"
                     />
                     <div className="hidden sm:block">
-                        <span className="font-title text-xl font-bold text-ardalos-dark block leading-none uppercase">
-                            ARDALOS
+                        <span className="font-title text-xl font-bold text-ardalos-dark block leading-none">
+                            Association des
                         </span>
-                        <span className="text-[10px] uppercase tracking-widest text-ardalos-green font-bold">
-                            Arda Yesso
+                        <span className="text-[10px] tracking-widest text-ardalos-green font-bold">
+                            Ardalos
                         </span>
                     </div>
                 </Link>

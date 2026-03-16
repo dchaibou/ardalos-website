@@ -26,7 +26,7 @@ export async function sendEmail(formData: FormData) {
             subject: `[Contact Ardalos] ${subject}`,
             html: `
         <div style="font-family: sans-serif; color: #333;">
-          <h2 style="color: #00C853;">Nouveau message de contact - Ardalos</h2>
+          <h2 style="color: #00C853;">Nouveau message de contact - Association des Ardalos</h2>
           <p><strong>Nom :</strong> ${name}</p>
           <p><strong>Email :</strong> ${email}</p>
           <p><strong>Sujet :</strong> ${subject}</p>
