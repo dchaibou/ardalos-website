@@ -30,10 +30,7 @@ const Header = () => {
                         className="object-contain"
                     />
                     <span className="font-title text-xl font-bold text-ardalos-dark block leading-none">
-                        Association des
-                    </span>
-                    <span className="text-[10px] tracking-widest text-ardalos-green font-bold">
-                        Ardalos
+                        Association des <span className="text-ardalos-green">Ardalos</span>
                     </span>
                 </Link>
 
