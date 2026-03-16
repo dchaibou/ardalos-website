@@ -1,15 +1,10 @@
+import Image from "next/image";
+
 const Hero = () => {
     return (
-        <section className="relative overflow-hidden bg-white py-16 md:py-28">
-            {/* Élément décoratif rappelant les feuilles du logo en arrière-plan */}
-            <div className="absolute top-0 right-0 -z-10 opacity-5 translate-x-1/4 -translate-y-1/4">
-                <svg width="600" height="600" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M100 20C100 20 140 60 140 100C140 140 100 180 100 180C100 180 60 140 60 100C60 60 100 20 100 20Z" fill="var(--color-ardalos-green)" />
-                </svg>
-            </div>
-
-            <div className="container mx-auto px-4 grid md:grid-cols-2 gap-12 items-center">
-                <div>
+        <section className="py-20 bg-white">
+            <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-16">
+                <div className="w-full md:w-1/2">
                     <span className="inline-block px-4 py-1 rounded-full bg-ardalos-light text-ardalos-leaf font-bold text-sm mb-6 border border-ardalos-leaf/20">
                         Association des Ardalos
                     </span>
@@ -29,19 +24,21 @@ const Hero = () => {
                     </div>
                 </div>
 
-                {/* Espace pour une image représentative (ou illustration) */}
-                <div className="relative">
-                    <div className="aspect-square bg-ardalos-light rounded-2xl border-2 border-dashed border-ardalos-leaf/30 flex items-center justify-center p-8">
-                        {/* Ici vous pourrez mettre une photo d&apos;une action réelle */}
-                        <div className="text-center">
-                            <div className="text-6xl mb-4">🌍</div>
-                            <p className="text-ardalos-gray italic font-medium">Illustration des actions Ardalos sur le terrain</p>
+                <div className="w-full md:w-1/2">
+                    <div className="relative border-4 border-ardalos-dark p-2 rounded-xl">
+                        <Image
+                            src="/arda_yesso_cover.jpeg"
+                            alt="Illustration des actions Ardalos sur le terrain"
+                            width={1000}
+                            height={750}
+                            className="rounded-lg grayscale hover:grayscale-0 transition-all duration-500 object-cover aspect-4/3"
+                            style={{ width: '100%', height: 'auto' }}
+                        />
+
+                        <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border border-ardalos-light">
+                            <p className="text-3xl font-black text-ardalos-green">10+</p>
+                            <p className="text-xs font-bold uppercase tracking-tighter text-ardalos-dark">Projets réalisés</p>
                         </div>
-                    </div>
-                    {/* Badge de statistiques flottant */}
-                    <div className="absolute -bottom-6 -left-6 bg-white p-6 rounded-xl shadow-xl border border-ardalos-light">
-                        <p className="text-3xl font-black text-ardalos-green">10+</p>
-                        <p className="text-xs font-bold uppercase tracking-tighter text-ardalos-dark">Projets réalisés</p>
                     </div>
                 </div>
             </div>

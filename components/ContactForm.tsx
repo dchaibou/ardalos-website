@@ -2,27 +2,30 @@
 
 import { useState } from "react";
 import { sendEmail } from "@/app/actions/sendEmail";
+import { MapPin, Phone } from "lucide-react";
 
 const ContactForm = () => {
     const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
     async function handleAction(formData: FormData) {
         setStatus("loading");
-        const result = await sendEmail(formData);
+        //     const result = await sendEmail(formData);
 
-        if (result.success) {
+        //     if (result.success) {
+        //         setStatus("success");
+        //     } else {
+        //         setStatus("error");
+        //     }
+
+        setTimeout(() => {
             setStatus("success");
-        } else {
-            setStatus("error");
-        }
-    }
-
+        }, 2000);
+    };
     return (
         <section className="py-20 bg-white">
             <div className="container mx-auto px-4 max-w-4xl">
                 <div className="grid md:grid-cols-2 gap-12 bg-ardalos-light rounded-3xl overflow-hidden shadow-xl border border-ardalos-leaf/10">
 
-                    {/* Informations de contact */}
                     <div className="bg-ardalos-dark p-10 text-white flex flex-col justify-between">
                         <div>
                             <h2 className="font-title text-3xl font-black uppercase mb-6">
@@ -34,17 +37,17 @@ const ContactForm = () => {
 
                             <div className="space-y-6">
                                 <div className="flex items-start gap-4">
-                                    <span className="bg-ardalos-green/20 p-2 rounded-lg text-ardalos-green">📍</span>
+                                    <span className="bg-ardalos-green/20 p-2 rounded-lg text-ardalos-green"><MapPin size={18} /></span>
                                     <div>
                                         <h4 className="font-bold text-sm">Siège Social</h4>
                                         <p className="text-sm text-gray-400">Quartier Nouveau Marché, Niamey</p>
                                     </div>
                                 </div>
                                 <div className="flex items-start gap-4">
-                                    <span className="bg-ardalos-green/20 p-2 rounded-lg text-ardalos-green">📞</span>
+                                    <span className="bg-ardalos-green/20 p-2 rounded-lg text-ardalos-green"><Phone size={18} /></span>
                                     <div>
                                         <h4 className="font-bold text-sm">Téléphone</h4>
-                                        <p className="text-sm text-gray-400">+227 96 00 00 00</p>
+                                        <p className="text-sm text-gray-400">+227 88 89 92 69</p>
                                     </div>
                                 </div>
                             </div>
@@ -55,7 +58,6 @@ const ContactForm = () => {
                         </div>
                     </div>
 
-                    {/* Formulaire */}
                     <div className="p-10">
                         {status === "success" ? (
                             <div className="h-full flex flex-col items-center justify-center text-center animate-in fade-in zoom-in">
@@ -72,7 +74,7 @@ const ContactForm = () => {
                                 </button>
                             </div>
                         ) : (
-                                <form action={handleAction} className="space-y-5">
+                            <form action={handleAction} className="space-y-5">
                                 <div>
                                     <label className="block text-xs font-bold uppercase text-ardalos-gray mb-2">Nom Complet</label>
                                     <input

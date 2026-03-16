@@ -20,7 +20,7 @@ const Header = () => {
                             ARDALOS
                         </span>
                         <span className="text-[10px] uppercase tracking-widest text-ardalos-green font-bold">
-                            Le changement par l&apos;action
+                            Arda Yesso
                         </span>
                     </div>
                 </Link>

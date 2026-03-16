@@ -5,10 +5,9 @@ const AboutSection = () => {
         <section className="py-20 bg-white">
             <div className="container mx-auto px-4 flex flex-col md:flex-row items-center gap-16">
                 <div className="w-full md:w-1/2">
-                    {/* Un cadre stylisé qui rappelle la forme du logo */}
                     <div className="relative border-4 border-ardalos-dark p-2 rounded-xl">
                         <Image
-                            src="/action-humanitaire.jpeg"
+                            src="/child.jpeg"
                             alt="Action Humanitaire"
                             width={1000}
                             height={750}

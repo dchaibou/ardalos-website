@@ -18,7 +18,7 @@ export const ARDALOS_NEWS: NewsArticle[] = [
         date: "12 Mars 2026",
         excerpt: "Retour sur notre mission de distribution de manuels scolaires pour 300 élèves.",
         content: "...",
-        image: "/3.jpeg"
+        image: "/child.jpeg"
     },
     {
         id: "2",
@@ -28,7 +28,6 @@ export const ARDALOS_NEWS: NewsArticle[] = [
         date: "05 Mars 2026",
         excerpt: "Une journée dédiée à la prévention et au don de kits d'hygiène à Niamey.",
         content: "...",
-        image: "/4.jpeg"
+        image: "/action_humanitaire.jpeg"
     },
-    // Ajoutez d'autres articles ici
 ];

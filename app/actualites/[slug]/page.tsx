@@ -2,15 +2,14 @@ import { ARDALOS_NEWS } from "@/constants/news";
 import { notFound } from "next/navigation";
 import Image from "next/image";
 import Link from "next/link";
+import { Linkedin, Facebook, X } from 'lucide-react';
 
-// On rend la fonction asynchrone pour pouvoir "await" params
 export default async function ArticleDetail({
     params
 }: {
-    params: Promise<{ slug: string }> // Type mis à jour : c'est une Promise
+    params: Promise<{ slug: string }>
 }) {
 
-    // On déballe les paramètres avant l'utilisation
     const { slug } = await params;
 
     const article = ARDALOS_NEWS.find((a) => a.slug === slug);
@@ -19,13 +18,12 @@ export default async function ArticleDetail({
 
     return (
         <article className="min-h-screen bg-white pb-20">
-            {/* Header de l'article avec l'image optimisée */}
             <div className="relative h-[50vh] min-h-100 w-full bg-ardalos-dark">
                 <Image
                     src={article.image}
                     alt={article.title}
                     fill
-                    priority // Ajouté pour le SEO (LCP)
+                    priority
                     className="object-cover opacity-60"
                 />
                 <div className="absolute inset-0 flex items-center justify-center text-center p-4">
@@ -57,8 +55,9 @@ export default async function ArticleDetail({
                         </Link>
                         <div className="flex gap-4">
                             <span className="text-xs uppercase font-bold text-gray-400">Partager :</span>
-                            <button className="text-ardalos-dark hover:text-ardalos-green transition-colors">FB</button>
-                            <button className="text-ardalos-dark hover:text-ardalos-green transition-colors">TW</button>
+                            <button className="text-ardalos-dark hover:text-ardalos-green transition-colors"><Linkedin size={20} /></button>
+                            <button className="text-ardalos-dark hover:text-ardalos-green transition-colors"><Facebook size={20} /></button>
+                            <button className="text-ardalos-dark hover:text-ardalos-green transition-colors"><X size={20} /></button>
                         </div>
                     </div>
                 </div>
